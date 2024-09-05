@@ -55,7 +55,7 @@ export const Login =()=>{
          <form>
           {
             config.map((obj)=>{
-              return <Input {...obj} handleChange={handleChange}/>
+              return <Input {...obj} key={obj.id} handleChange={handleChange}/>
             })
           }
           
